@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b688302-12ba-48d4-8672-588ab2e70fa5" name="Default Changelist" comment="">
+    <list default="true" id="7b688302-12ba-48d4-8672-588ab2e70fa5" name="Default Changelist" comment="Add the tests for all the cases">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ex_demo_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/ex_demo_test.py" afterDir="false" />
     </list>
@@ -36,15 +36,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1947" />
-          <entry key="txt" value="325" />
+          <entry key="py" value="3412" />
+          <entry key="txt" value="506" />
           <entry key="yml" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="325" />
-          <entry key="Python" value="1947" />
+          <entry key="PLAIN_TEXT" value="506" />
+          <entry key="Python" value="3412" />
           <entry key="YAML" value="19" />
         </counts>
       </usages-collector>
@@ -57,15 +57,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ex_demo_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="83" selection-start-line="83" selection-end-line="83" />
+            <state relative-caret-position="106">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
-                <marker date="1537265518263" expanded="true" signature="93:127" ph="..." />
-                <marker date="1537265518263" expanded="true" signature="303:551" ph="..." />
-                <marker date="1537265518263" expanded="true" signature="1760:3549" ph="..." />
-                <marker date="1537265518263" expanded="true" signature="2419:2624" ph="..." />
-                <marker date="1537265518263" expanded="true" signature="3191:3396" ph="..." />
+                <marker date="1537274557216" expanded="true" signature="93:127" ph="..." />
+                <marker date="1537274557216" expanded="true" signature="303:849" ph="..." />
+                <marker date="1537274557216" expanded="true" signature="431:437" ph="..." />
+                <marker date="1537274557216" expanded="true" signature="876:1050" ph="..." />
+                <marker date="1537274557216" expanded="true" signature="1914:1976" ph="..." />
+                <marker date="1537274557216" expanded="true" signature="2011:2012" ph="..." />
+                <marker date="1537274557216" expanded="true" signature="2464:2467" ph="..." />
+                <marker date="1537274557216" expanded="true" signature="2730:3555" ph="..." />
+                <marker date="1537274557216" expanded="true" signature="3001:3010" ph="..." />
+                <marker date="1537274557216" expanded="true" signature="3389:3398" ph="..." />
               </folding>
             </state>
           </provider>
@@ -81,6 +86,12 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>pdb</find>
+      <find>with</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -214,7 +225,35 @@
       <option name="project" value="LOCAL" />
       <updated>1537265433802</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add the tests for all the cases">
+      <created>1537265621729</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1537265621729</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Create a common function for the invoice and use it">
+      <created>1537265772728</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1537265772728</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Use the setUp method for the class">
+      <created>1537266333528</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1537266333528</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Use a class for invoice and fix the tests">
+      <created>1537266626741</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1537266626741</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -233,11 +272,11 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.14559819" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.20316027" />
       <window_info anchor="bottom" id="NativeScript" order="9" />
       <window_info anchor="bottom" id="DB Execution Console" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.34650114" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.43002257" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="14" />
       <window_info anchor="right" x="0" y="0" width="430" height="853" id="Documentation" side_tool="true" visible="true" weight="0.32959402" />
@@ -261,7 +300,11 @@
     <MESSAGE value="Add a test for invoice and fix the access to the variable of the invoice line for the computing of the amount" />
     <MESSAGE value="Check the amount of the invoice is correctly computed" />
     <MESSAGE value="Split the invoice test in the InvoiceTestCase" />
-    <option name="LAST_COMMIT_MESSAGE" value="Split the invoice test in the InvoiceTestCase" />
+    <MESSAGE value="Add the tests for all the cases" />
+    <MESSAGE value="Create a common function for the invoice and use it" />
+    <MESSAGE value="Use the setUp method for the class" />
+    <MESSAGE value="Use a class for invoice and fix the tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Use a class for invoice and fix the tests" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -273,15 +316,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ex_demo_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
+        <state relative-caret-position="106">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <marker date="1537265518263" expanded="true" signature="93:127" ph="..." />
-            <marker date="1537265518263" expanded="true" signature="303:551" ph="..." />
-            <marker date="1537265518263" expanded="true" signature="1760:3549" ph="..." />
-            <marker date="1537265518263" expanded="true" signature="2419:2624" ph="..." />
-            <marker date="1537265518263" expanded="true" signature="3191:3396" ph="..." />
+            <marker date="1537274557216" expanded="true" signature="93:127" ph="..." />
+            <marker date="1537274557216" expanded="true" signature="303:849" ph="..." />
+            <marker date="1537274557216" expanded="true" signature="431:437" ph="..." />
+            <marker date="1537274557216" expanded="true" signature="876:1050" ph="..." />
+            <marker date="1537274557216" expanded="true" signature="1914:1976" ph="..." />
+            <marker date="1537274557216" expanded="true" signature="2011:2012" ph="..." />
+            <marker date="1537274557216" expanded="true" signature="2464:2467" ph="..." />
+            <marker date="1537274557216" expanded="true" signature="2730:3555" ph="..." />
+            <marker date="1537274557216" expanded="true" signature="3001:3010" ph="..." />
+            <marker date="1537274557216" expanded="true" signature="3389:3398" ph="..." />
           </folding>
         </state>
       </provider>
