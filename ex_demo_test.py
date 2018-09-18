@@ -14,12 +14,18 @@ def create_product(name, price):
     return Product(name, price)
 
 
+@dataclass
+class InvoiceLine:
+    product: Product
+    quantity: float
+
+    @property
+    def amount(self):
+        return self.quantity * self.product.price
+
+
 def create_invoice_line(product, quantity):
-    return {
-        'product': product,
-        'quantity': quantity,
-        'amount': quantity * product['price']
-    }
+    return InvoiceLine(product, quantity)
 
 
 def create_invoice(name, customer, invoice_lines, vat=1.21):
@@ -51,6 +57,13 @@ class ProductTestCase(unittest.TestCase):
 
         with self.assertRaises(AssertionError):
             create_product('                        ', 1.0)
+
+    def test_amount_invoice_line(self):
+        product = create_product('iPhone', 1000.0)
+        invoice_line = create_invoice_line(product, 2.0)
+
+        amount = product.price * 2.0
+        self.assertEqual(amount, invoice_line.amount)
 
 
 if __name__ == '__main__':
