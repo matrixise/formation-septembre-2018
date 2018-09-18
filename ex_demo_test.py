@@ -41,7 +41,7 @@ class ProductTestCase(unittest.TestCase):
 
     def test_product_creation_name(self):
         with self.assertRaises(AssertionError):
-            create_produit(12345678, 1.0)
+            create_product(123, 1.0)
 
 
 if __name__ == '__main__':
