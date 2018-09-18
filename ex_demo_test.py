@@ -1,6 +1,8 @@
 import unittest
 
 def create_product(name, price):
+    assert isinstance(name, str)
+    assert isinstance(price, float) and price > 0.0
     return {
         'name': name,
         'price': price,
