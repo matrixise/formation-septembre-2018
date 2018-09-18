@@ -1,7 +1,7 @@
 import unittest
 
 def create_product(name, price):
-    assert isinstance(name, str)
+    assert isinstance(name, str) and len(name.strip()) > 0
     assert isinstance(price, float) and price > 0.0
     return {
         'name': name,
@@ -44,6 +44,13 @@ class ProductTestCase(unittest.TestCase):
     def test_product_creation_name(self):
         with self.assertRaises(AssertionError):
             create_product(123, 1.0)
+
+    def test_product_raise_exception_if_name_empty(self):
+        with self.assertRaises(AssertionError):
+            create_product('', 1.0)
+
+        with self.assertRaises(AssertionError):
+            create_product('                        ', 1.0)
 
 
 if __name__ == '__main__':
