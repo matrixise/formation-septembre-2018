@@ -30,40 +30,17 @@ def create_invoice(name, customer, invoice_lines, vat=1.21):
 #         'name': name
 #     }
 
-def test():
-    product = create_product('iPhone', 1429.0)
-    assert product['name'] == 'iPhone'
-    assert product['price'] == 1429.0
+class ProductTestCase(unittest.TestCase):
+    def test_product_creation(self):
+        product = create_product('iPhone', 1000.0)
 
-    invoice_line = create_invoice_line(product, 10)
-    assert invoice_line['product'] == product
-    assert invoice_line['quantity'] == 10
-    assert invoice_line['amount'] == 10 * product['price']
+        self.assertEqual(product['name'], 'iPhone')
+        self.assertEqual(product['price'], 1000.0)
 
-    invoice = create_invoice('INV-2018/0001', 'Stephane', [invoice_line])
-    assert invoice['name'] == 'INV-2018/0001'
-    assert invoice['amount'] == invoice_line['amount']
-    assert invoice['total_amount'] == invoice['amount'] * 1.21
+    def test_product_creation_name(self):
+        with self.assertRaises(AssertionError):
+            create_produit(12345678, 1.0)
+
 
 if __name__ == '__main__':
-    test()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    unittest.main()
