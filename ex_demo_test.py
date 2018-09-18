@@ -1,3 +1,4 @@
+import operator
 import unittest
 from dataclasses import dataclass
 
@@ -36,7 +37,8 @@ def create_invoice(name, customer, invoice_lines, vat=1.21):
         'customer': customer,
         'amount': amount,
         'vat': vat,
-        'total_amount': amount * vat
+        'total_amount': amount * vat,
+        'invoice_lines': invoice_lines,
     }
 
 
@@ -71,7 +73,18 @@ class ProductTestCase(unittest.TestCase):
         invoice = create_invoice('INV-2018/0001', 'Manfred', [invoice_line], vat=1.20)
 
         self.assertTrue(invoice['name'].startswith('INV-2018/'))
+        self.assertEqual(len(invoice['invoice_lines']), 1)
 
+        # amount = sum(map(operator.attrgetter('amount'), invoice['invoice_lines']))
+        # self.assertEqual(invoice['amount'], amount)
+
+        amount = sum(line.amount for line in invoice['invoice_lines'])
+        self.assertEqual(invoice['amount'], amount)
+
+        # amount = 0
+        # for line in invoice['invoice_lines']:
+        #     amount = amount + line.amount
+        # self.assertEqual(invoice['amount'], amount)
 
 if __name__ == '__main__':
     unittest.main()
