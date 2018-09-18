@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b688302-12ba-48d4-8672-588ab2e70fa5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ex_demo_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/ex_demo_test.py" afterDir="false" />
     </list>
@@ -37,15 +36,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="518" />
-          <entry key="txt" value="39" />
+          <entry key="py" value="1947" />
+          <entry key="txt" value="325" />
           <entry key="yml" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="39" />
-          <entry key="Python" value="518" />
+          <entry key="PLAIN_TEXT" value="325" />
+          <entry key="Python" value="1947" />
           <entry key="YAML" value="19" />
         </counts>
       </usages-collector>
@@ -58,11 +57,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ex_demo_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="48" column="40" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
+            <state relative-caret-position="211">
+              <caret line="83" selection-start-line="83" selection-end-line="83" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
-                <marker date="1537264076722" expanded="true" signature="77:111" ph="..." />
+                <marker date="1537265518263" expanded="true" signature="93:127" ph="..." />
+                <marker date="1537265518263" expanded="true" signature="303:551" ph="..." />
+                <marker date="1537265518263" expanded="true" signature="1760:3549" ph="..." />
+                <marker date="1537265518263" expanded="true" signature="2419:2624" ph="..." />
+                <marker date="1537265518263" expanded="true" signature="3191:3396" ph="..." />
               </folding>
             </state>
           </provider>
@@ -97,8 +100,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="960" />
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="27" />
     <option name="width" value="960" />
     <option name="height" value="1053" />
@@ -184,11 +186,39 @@
       <option name="project" value="LOCAL" />
       <updated>1537261325384</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Use dataclas for invoice_line and add test">
+      <created>1537264495999</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1537264495999</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add a test for invoice and fix the access to the variable of the invoice line for the computing of the amount">
+      <created>1537264857549</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1537264857549</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Check the amount of the invoice is correctly computed">
+      <created>1537265275471</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1537265275471</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Split the invoice test in the InvoiceTestCase">
+      <created>1537265433802</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1537265433802</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="960" y="27" width="960" height="1053" extended-state="4" />
+    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.25657895" />
@@ -203,13 +233,14 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.1275395" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.14559819" />
       <window_info anchor="bottom" id="NativeScript" order="9" />
       <window_info anchor="bottom" id="DB Execution Console" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.3295711" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.34650114" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="14" />
+      <window_info anchor="right" x="0" y="0" width="430" height="853" id="Documentation" side_tool="true" visible="true" weight="0.32959402" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -226,7 +257,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fix the name of the function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix the name of the function" />
+    <MESSAGE value="Use dataclas for invoice_line and add test" />
+    <MESSAGE value="Add a test for invoice and fix the access to the variable of the invoice line for the computing of the amount" />
+    <MESSAGE value="Check the amount of the invoice is correctly computed" />
+    <MESSAGE value="Split the invoice test in the InvoiceTestCase" />
+    <option name="LAST_COMMIT_MESSAGE" value="Split the invoice test in the InvoiceTestCase" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -238,11 +273,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ex_demo_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="48" column="40" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
+        <state relative-caret-position="211">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <marker date="1537264076722" expanded="true" signature="77:111" ph="..." />
+            <marker date="1537265518263" expanded="true" signature="93:127" ph="..." />
+            <marker date="1537265518263" expanded="true" signature="303:551" ph="..." />
+            <marker date="1537265518263" expanded="true" signature="1760:3549" ph="..." />
+            <marker date="1537265518263" expanded="true" signature="2419:2624" ph="..." />
+            <marker date="1537265518263" expanded="true" signature="3191:3396" ph="..." />
           </folding>
         </state>
       </provider>
