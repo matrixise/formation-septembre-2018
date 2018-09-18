@@ -29,7 +29,7 @@ def create_invoice_line(product, quantity):
 
 
 def create_invoice(name, customer, invoice_lines, vat=1.21):
-    amount = sum(line['amount'] for line in invoice_lines)
+    amount = sum(line.amount for line in invoice_lines)
 
     return {
         'name': name,
@@ -64,6 +64,13 @@ class ProductTestCase(unittest.TestCase):
 
         amount = product.price * 2.0
         self.assertEqual(amount, invoice_line.amount)
+
+    def test_invoice(self):
+        product = create_product('iPhone', 1000.0)
+        invoice_line = create_invoice_line(product, 2.0)
+        invoice = create_invoice('INV-2018/0001', 'Manfred', [invoice_line], vat=1.20)
+
+        self.assertTrue(invoice['name'].startswith('INV-2018/'))
 
 
 if __name__ == '__main__':
