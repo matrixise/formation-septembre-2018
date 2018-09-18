@@ -1,3 +1,5 @@
+import unittest
+
 def create_product(name, price):
     return {
         'name': name,
