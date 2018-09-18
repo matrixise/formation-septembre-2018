@@ -69,40 +69,30 @@ class ProductTestCase(unittest.TestCase):
 
 
 class InvoiceTestCase(unittest.TestCase):
-    def create_invoice(self):
+    def setUp(self):
         product = create_product('iPhone', 1000.0)
         invoice_line = create_invoice_line(product, 2.0)
-        return create_invoice('INV-2018/0001', 'Manfred', [invoice_line], vat=1.20)
+        self.invoice = create_invoice('INV-2018/0001', 'Manfred', [invoice_line], vat=1.20)
 
     def test_invoice_check_name(self):
-        invoice = self.create_invoice()
-
-        self.assertTrue(invoice['name'].startswith('INV-2018/'))
+        self.assertTrue(self.invoice['name'].startswith('INV-2018/'))
 
     def test_invoice_check_number_of_lines(self):
-        invoice = self.create_invoice()
-
-        self.assertEqual(len(invoice['invoice_lines']), 1)
+        self.assertEqual(len(self.invoice['invoice_lines']), 1)
 
     def test_invoice_check_amount_functional(self):
-        invoice = self.create_invoice()
-
-        amount = sum(map(operator.attrgetter('amount'), invoice['invoice_lines']))
-        self.assertEqual(invoice['amount'], amount)
+        amount = sum(map(operator.attrgetter('amount'), self.invoice['invoice_lines']))
+        self.assertEqual(self.invoice['amount'], amount)
 
     def test_invoice_check_amount_with_list_comprehension(self):
-        invoice = self.create_invoice()
-
-        amount = sum(line.amount for line in invoice['invoice_lines'])
-        self.assertEqual(invoice['amount'], amount)
+        amount = sum(line.amount for line in self.invoice['invoice_lines'])
+        self.assertEqual(self.invoice['amount'], amount)
 
     def test_invoice_check_amount_with_for_loop(self):
-        invoice = self.create_invoice()
-
         amount = 0
-        for line in invoice['invoice_lines']:
+        for line in self.invoice['invoice_lines']:
             amount = amount + line.amount
-        self.assertEqual(invoice['amount'], amount)
+        self.assertEqual(self.invoice['amount'], amount)
 
 
 if __name__ == '__main__':
